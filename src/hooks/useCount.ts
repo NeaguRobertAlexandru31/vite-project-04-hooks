@@ -3,9 +3,9 @@ import { useState } from "react";
 export const useCount = (max?: number) => {
   /* Controller - Hook */
   const [control, setControl] =
-    useState<boolean>(false);   /* Tipizzazione useState */
+    useState<boolean>(false); /* Tipizzazione useState */
   const [count, setCount] =
-    useState<number>(0);        /* Tipizzazione useState a <number> */
+    useState<number>(0); /* Tipizzazione useState a <number> */
 
   const add = () => {
     /* Incremento */

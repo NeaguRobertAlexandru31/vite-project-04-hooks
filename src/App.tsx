@@ -16,9 +16,13 @@ const App = () => {
     if(count % 2 === 0){
       setLap(lap + 1);
     }
+    return () => {  /* Non si usa mai */
+      // unmount
+    }
   }, [count])
 
   return (
+
     /* View */
     <div>
       <h3>{count}</h3>
@@ -29,6 +33,7 @@ const App = () => {
       <button onClick={moltiplicatore}>Moltiplicatore</button>
     </div>
   );
+
 };
 
 export default App;

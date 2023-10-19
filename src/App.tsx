@@ -7,7 +7,7 @@ import { useCount } from './hooks/useCount'
 const App = () => {
 
   /* Controller - Importo le funzioni che mi servono  */
-  const { count, add, remove, reset} = useCount()
+  const { count, add, remove, reset, moltiplicatore} = useCount()
 
   return(
 
@@ -17,6 +17,7 @@ const App = () => {
       <button onClick={add}>+</button>
       <button onClick={remove}>-</button>
       <button onClick={reset}>Reset</button>
+      <button onClick={moltiplicatore}>Moltiplicatore</button>
     </div>
 
   )
